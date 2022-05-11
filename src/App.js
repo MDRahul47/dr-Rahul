@@ -10,10 +10,11 @@ import Navbar from './Pages/Share/Navbar';
 
 function App() {
   return (
-    <div >
+    <div className="max-w-7xl overflow-x-hidden mx-auto px-12 " >
     <Navbar></Navbar>
     <Routes>
         <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="appointment" element={<Appointment />} />
         <Route path="reviews" element={<Reviews />} />
